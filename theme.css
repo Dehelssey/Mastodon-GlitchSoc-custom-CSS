@@ -1,0 +1,399 @@
+:root {
+    --accent: #38ef7d;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.status__content a,
+.public-layout .header .nav-link{
+    text-decoration: none !important;
+}
+
+
+
+.public-layout .header .nav-link {
+    color: #fff;
+    background-image: linear-gradient(to right, var(--accent) 75%, var(--accent) 75%);
+    background-position: 50% 2.3em;
+    background-repeat: no-repeat;
+    background-size: 80% .3em;
+    transition: all .3s ease;
+    text-decoration: none !important;
+}
+
+.public-layout .header .nav-link:hover {
+    background-position: 50% 1.25em;
+    background-size: 80% 1.5em;
+    color: #04052e !important;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.status__content a:not(.mention):not(.hashtag):not(.media-gallery__item-thumbnail):not(.status-card):not(.status__content__spoiler-link) {
+    color: #fff;
+    background-image: linear-gradient(to right, var(--accent) 75%, var(--accent) 75%);
+    background-position: 0 1em;
+    background-repeat: repeat-x;
+    background-size: 1em 1em;
+    transition: all .3s ease;
+    text-decoration: none !important;
+}
+a.mention, a.hashtag {
+    color: #fff !important;
+    background: rgba(255, 255, 255, .13);
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 2px 0;
+    transition: all .3s ease;
+}
+
+.light a.mention {
+    color: #282c37 !important;
+    background: rgba(0,0,0,.13);
+}
+.status__content a:not(.mention):not(.media-gallery__item-thumbnail):not(.status-card):not(.status__content__spoiler-link):hover {
+    background-position: 0 0em;
+    background-size: 1em 2em;
+    color: #04052e !important;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+a.mention:hover {
+    background: var(--accent);
+    color: #04052e !important;
+}
+a.mention:hover span {
+    text-decoration: none !important;
+}
+.button:not(.button-secondary):hover,
+.block-button:hover,
+.simple_form button:hover,
+.compose-form__publish button:hover,
+.button.logo-button:hover,
+button.button.logo-button.button--destructive:hover,
+.status__content__spoiler-link:hover {
+    background: url(https://hostux.pics/images/2019/01/02/hover-rainbow42dff3bbdf6432b8.gif);
+}
+.button:not(.button-secondary):disabled,
+.button:not(.button-secondary):disabled:hover {
+    background: #fff !important;
+    color: #04052e !important;
+    opacity: .5 !important;
+    transition: all .3s ease;
+}
+.button:not(.button-secondary),
+.button.logo-button,
+.icon-button.overlayed,
+.simple_form button,
+.simple_form .button,
+.simple_form .block-button,
+.button.button-alternative,
+.button.button-alternative-2,
+.getting-started a.column-link,
+.column-back-button,
+.drawer__header a,
+.react-toggle--checked .react-toggle-track,
+.react-toggle--checked:not(.react-toggle--disabled) .react-toggle-track,
+.privacy-dropdown.active .privacy-dropdown__value.active,
+.privacy-dropdown__option,
+.privacy-dropdown__option.active,
+.reply-indicator__content .status__content__spoiler-link,
+.status__content__spoiler-link,
+.confirmation-modal__action-bar .confirmation-modal__cancel-button,
+.confirmation-modal__action-bar .mute-modal__cancel-button,
+.mute-modal__action-bar .confirmation-modal__cancel-button,
+.mute-modal__action-bar .mute-modal__cancel-button,
+.upload-progress__tracker,
+.public-layout .header .nav-button,
+.pagination .page.current,
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a {
+    background-color: var(--accent) !important;
+    border-radius: 500px;
+        color: #04052e !important;
+
+}
+
+.button.button-secondary {
+    border-radius: 500px;
+    border-color: var(--accent) !important;
+    color: var(--accent);
+}
+
+.button.button-secondary:hover,
+.loading-bar {
+    background-color: var(--accent) !important;
+    color: #04052e;
+}
+
+.poll__input.active {
+    border-color: #fff;
+    background: url(https://hostux.pics/images/2019/01/02/hover-rainbow42dff3bbdf6432b8.gif) !important;
+}
+
+.admin-wrapper .sidebar ul a {
+    border-radius: 500px 0 0 500px !important;
+}
+.button:not(.button-secondary):active,
+.button:not(.button-secondary):focus,
+.button:not(.button-secondary):hover,
+.icon-button.overlayed:hover,
+.simple_form button:active,
+.simple_form button:focus,
+.simple_form button:hover,
+.simple_form .button:active,
+.simple_form .button:focus,
+.simple_form .button:hover,
+.simple_form .block-button:active,
+.simple_form .block-button:focus,
+.simple_form .block-button:hover,
+.button.button-alternative:hover,
+.button.button-alternative-2:hover,
+.column-link:hover,
+.getting-started a.column-link:hover,
+.column-header__button:hover,
+.column-header__button.active:hover,
+.column-header__back-button:hover,
+.column-back-button:hover,
+.drawer__header a:hover,
+.react-toggle--checked .react-toggle-track,
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track,
+.privacy-dropdown.active .privacy-dropdown__value.active,
+.privacy-dropdown__option:hover,
+.privacy-dropdown__option.active,
+.privacy-dropdown__option.active:hover,
+.admin-wrapper .sidebar ul a:hover,
+.admin-wrapper .sidebar ul ul a.selected:hover,
+.reply-indicator__content .status__content__spoiler-link:hover,
+.status__content .status__content__spoiler-link:hover,
+.load-more:hover,
+.confirmation-modal__action-bar .confirmation-modal__cancel-button:active,
+.confirmation-modal__action-bar .confirmation-modal__cancel-button:focus,
+.confirmation-modal__action-bar .confirmation-modal__cancel-button:hover,
+.confirmation-modal__action-bar .mute-modal__cancel-button:active,
+.confirmation-modal__action-bar .mute-modal__cancel-button:focus,
+.confirmation-modal__action-bar .mute-modal__cancel-button:hover,
+.mute-modal__action-bar .confirmation-modal__cancel-button:active,
+.mute-modal__action-bar .confirmation-modal__cancel-button:focus,
+.mute-modal__action-bar .confirmation-modal__cancel-button:hover,
+.mute-modal__action-bar .mute-modal__cancel-button:active,
+.mute-modal__action-bar .mute-modal__cancel-button:focus,
+.mute-modal__action-bar .mute-modal__cancel-button:hover,
+.upload-progress__tracker,
+.public-layout .header .nav-button:hover,
+.pagination .page.current:hover,
+.drawer--header a:hover,
+.glitch.local-settings__navigation__item:hover,
+.glitch.local-settings__navigation__item.close:hover,
+.poll__chart.leading,
+.muted .poll__chart.leading {
+    background: url(https://hostux.pics/images/2019/01/02/hover-rainbow42dff3bbdf6432b8.gif) !important;
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.column-header__back-button,
+.notification__message .fa:not(.fa-retweet),
+.column-header button:hover,
+.status-card__host,
+.icon-button.active,
+.column-header.active .column-header__icon,
+.status.light .status__content a {
+    color: var(--accent);
+}
+.column-header.active .column-header__icon,
+.column-header.active {
+text-shadow: 0 0 10px RGBA(56, 239, 125, .42);
+    box-shadow: 0 1px 0 RGBA(56, 239, 125, .13);
+}
+
+.column-header__wrapper.active:before{
+        background: radial-gradient(ellipse, RGBA(56, 239, 125, .27) 0, RGBA(56, 239, 125, 0) 60%);
+}
+.account__action-bar__tab.active {
+    border-bottom: 4px solid var(--accent);
+}
+.status-card__title,
+.confirmation-modal__action-bar .confirmation-modal__cancel-button,
+.confirmation-modal__action-bar .confirmation-modal__secondary-button,
+.confirmation-modal__action-bar .mute-modal__cancel-button,
+.mute-modal__action-bar .confirmation-modal__cancel-button,
+.mute-modal__action-bar .confirmation-modal__secondary-button,
+.mute-modal__action-bar .mute-modal__cancel-button {
+    color: #fff;
+}
+.notification__favourite-icon-wrapper .fa.star-icon,
+.star-icon.active {
+    color: #ffcc00;
+}
+.bookmark-icon.active {
+    color: #e63462;
+}
+.account__header__tabs__buttons .icon-button {
+    border: none;
+}
+.trends__item__sparkline path {
+    stroke: var(--accent)!important;
+}
+.drawer--header,
+.drawer__pager,
+.drawer__inner,
+div[class^='mbstobon'],
+div[class*=' mbstobon'] .drawer__inner__mastodon,
+.drawer__inner__mastodon {
+    background: none;
+}
+div[class^='mbstobon'],
+div[class*=' mbstobon'] .drawer__inner__mastodon > .mastodon {
+    background: url(https://hostux.pics/images/2019/01/02/starlordd0ca32dcaad2ad32.png);
+    -webkit-filter: none;
+    filter: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.status__content__spoiler-link {
+    padding: 2px 10px;
+    color: #04052e !important;
+
+}
+
+/*
+* Remove the checker-board background from the media modal:
+* - this makes transparent images actually transparent
+*/
+.media-modal canvas,
+.media-modal img {
+    background: none
+}
+
+/* full-height media preview in feeds */
+
+div:not(.status__content__spoiler) > .media-gallery
+
+  {
+      height: auto !important;
+  }
+
+
+  .media-gallery__item-gifv-thumbnail
+  {
+    transform: translateY(0%);
+  }
+
+/* triangle tab indicator */
+.account__section-headline a.active:after,
+.account__section-headline a.active:before,
+.community-timeline__section-headline a.active:after,
+.community-timeline__section-headline a.active:before,
+.public-timeline__section-headline a.active:after,
+.public-timeline__section-headline a.active:before {
+    border-color: transparent transparent var(--accent);
+}
+
+.public-layout .header .nav-link {
+    color: #fff;
+}
+
+.public-layout .public-account-header__bar .avatar img {
+    border-radius: 50%;
+    border: 10px solid #313543;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter.active:after {
+    border-bottom: 4px solid var(--accent);
+}
+
+.glitch.local-settings__navigation__item.active {
+    background: var(--accent);
+    color: #04052e;
+}
+
+.glitch.local-settings__navigation__item.close {
+    background: #e63462
+}
+
+.notification__display-name {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.status__display-name:hover strong, .status__display-name.muted:hover strong, .reply-indicator__display-name:hover strong, .detailed-status__display-name:hover strong, a.account__display-name:hover strong, .notification__display-name:hover {
+    border-left: 5px solid white;
+    padding-left: 5px;
+    transition: all .3s ease;
+    color: var(--accent) !important;
+    text-decoration: none;
+}
+
+.column>.scrollable {
+    background: transparent;
+}
+
+.status:not(.light) {
+    margin-bottom: 10px;
+    background: #282c37;
+    border: none;
+}
+
+.detailed-status__action-bar {
+    margin-bottom: 10px;
+}
+
+.focusable:focus,
+.focusable:focus div,
+.focusable:focus .status__action-bar ,
+.focusable:focus .detailed-status div,
+.focusable:focus .detailed-status__action-bar{
+    background: #393f4f;
+}
+
+.wide .column {
+    max-width: 600px;
+}
+
+
+.poll li {
+    list-style: none;
+}
+
+.muted .poll__chart.leading {
+    opacity: .2;
+}
+
+.poll__chart {
+    border-radius: 50px;
+}
+
+.account__header__bar .avatar .account__avatar {
+    background: transparent;
+    border: 5px solid #313543;
+    border-radius: 50%;
+}
+
+.media-gallery__item {
+    min-height: 50px;
+}
+
+/* new emojo for emoji picker */
+
+.emoji-button::before {
+
+    content: '';
+    display: block;
+    height: 26px;
+    width: 22px;
+    background: url(https://radical.town/system/custom_emojis/images/000/010/297/original/synth-sun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.emoji-button img {
+    display: none;
+}
